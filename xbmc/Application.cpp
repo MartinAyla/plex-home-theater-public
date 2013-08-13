@@ -1378,9 +1378,9 @@ bool CApplication::Initialize()
 #endif
     g_windowManager.Add(new CGUIWindowSettingsScreenCalibration);
     g_windowManager.Add(new CGUIWindowSettingsCategory);
-#ifndef __PLEX__
+//#ifndef __PLEX__
     g_windowManager.Add(new CGUIWindowVideoNav);
-#endif
+//#endif
     g_windowManager.Add(new CGUIWindowVideoPlaylist);
     g_windowManager.Add(new CGUIWindowLoginScreen);
     g_windowManager.Add(new CGUIWindowSettingsProfile);

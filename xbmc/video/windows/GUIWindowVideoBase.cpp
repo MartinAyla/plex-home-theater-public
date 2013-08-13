@@ -889,11 +889,11 @@ void CGUIWindowVideoBase::AddItemToPlayList(const CFileItemPtr &pItem, CFileItem
 
 void CGUIWindowVideoBase::GetResumeItemOffset(const CFileItem *item, int& startoffset, int& partNumber)
 {
-#ifndef __PLEX__
+
   // do not resume livetv
   if (item->IsLiveTV())
     return;
-
+#ifndef __PLEX__
   startoffset = 0;
   partNumber = 0;
 

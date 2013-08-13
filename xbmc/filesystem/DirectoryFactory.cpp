@@ -257,6 +257,9 @@ IDirectory* CDirectoryFactory::Create(const CStdString& strPath)
   if (strProtocol == "iso9660") return new CISO9660Directory();
 #endif
   if (strProtocol == "udf") return new CUDFDirectory();
+#ifdef HAS_PVRCLIENTS
+  if (strProtocol == "pvr") return new CPVRDirectory();
+#endif
 
 
   if( g_application.getNetwork().IsAvailable(true) )  // true to wait for the network (if possible)
